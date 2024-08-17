@@ -5,16 +5,22 @@
 
 #Static Variables
 protocol='tcp'
-port_range=22
-source_address='10.17.0.0/16'
+port_range=23
+source_address='10.1.0.0/16'
 region='us-east-1'
 
 #Here you'll set which account the script will be ran against 
+#Replace localstack value to use you're own account
 profile='localstack'
 
 #Getting the secruity group name list
 security_groups=$(aws ec2 describe-security-groups --profile $profile --region $region | grep GroupName | sed 's/[":,]//g' | sed 's/GroupName//g')
 
+echo '##########'
+echo '##########'
+echo '##########'
+echo "this script does not handle errors just yet, feel free to contribute..."
+echo '##########'
 echo '##########'
 echo '##########'
 echo "Remember to configure you're desired account profile to use this script, happy coding ;)"
