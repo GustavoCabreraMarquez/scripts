@@ -1,6 +1,6 @@
 #!/bin/bash
 #author: Gustavo Marquez
-#Applies certain rule into all sg's in logged account/region
+#Applies specific rule into all sg's in logged account/region
 
 
 #Static Variables
